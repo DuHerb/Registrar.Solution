@@ -36,3 +36,4 @@
 /Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Major/Index.g.cshtml.cs
 /Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Major/New.g.cshtml.cs
 /Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Major/Show.g.cshtml.cs
+/Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Course/Show.g.cshtml.cs

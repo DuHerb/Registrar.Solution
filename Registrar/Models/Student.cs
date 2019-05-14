@@ -23,6 +23,24 @@ namespace Registrar.Models
     //
     // }
 
+    public static void Dropped(int itemId)
+    {
+      MySqlConnection conn = DB.Connection();
+      conn.Open();
+      var cmd = conn.CreateCommand() as MySqlCommand;
+      cmd.CommandText = @"UPDATE items SET completed = true WHERE id = @ItemId;";
+      MySqlParameter itemIdParameter = new MySqlParameter();
+      itemIdParameter.ParameterName = "@ItemId";
+      itemIdParameter.Value = itemId;
+      cmd.Parameters.Add(itemIdParameter);
+      cmd.ExecuteNonQuery();
+      if (conn != null)
+      {
+        conn.Close();
+      }
+    }
+
+
     public static Student Find(int studentId)
     {
       MySqlConnection conn = DB.Connection();

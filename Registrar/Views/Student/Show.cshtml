@@ -5,10 +5,15 @@
 @if(Model["studentCourses"].Count != 0)
 {
   <ul>
-    @foreach(var course in Model["studentCourses"])
-    {
-      <li>@course.Name  @course.CourseNumber</li>
-    }
+  @foreach(var course in Model["studentCourses"])
+  {
+    <li>@course.Name  @course.CourseNumber
+    <form action='/students/@Model["student"].Id/drop' method='post'>
+    <input type="hidden" name="studentId" value="@Model["student"].Id">
+    <button type='submit'>Drop Course</button>
+    </form>
+    </li>
+  }
   </ul>
 }
 
