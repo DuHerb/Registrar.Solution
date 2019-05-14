@@ -1,0 +1,24 @@
+<h2>Student Details:</h2>
+<p>Student: @Model["student"].Name</p>
+<p>Enrollment Date: @Model["student"].EnrollmentDate</p>
+
+@if(Model["studentCourses"].Count != 0)
+{
+  <ul>
+    @foreach(var course in Model["studentCourses"])
+    {
+      <li>@course.Name  @course.CourseNumber</li>
+    }
+  </ul>
+}
+
+<form action="/student/@Model["student"].Id/addCourse" method="post">
+  <label for="courseId">Add Course: </label>
+  <select name="courseId">
+    @foreach(var course in Model["courses"])
+    {
+      <option value= "@course.Id" name="courseId">@course.CourseNumber</option>
+    }
+  </select>
+  <button type="submit" name="button">Add Course</button>
+</form>
