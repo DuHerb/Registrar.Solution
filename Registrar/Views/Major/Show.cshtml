@@ -1,0 +1,23 @@
+<h2>Major Details:</h2>
+<p>Name: @Model["major"].Name</p>
+
+@if(Model["majorCourses"].Count != 0)
+{
+  <ul>
+    @foreach(var course in Model["majorCourses"])
+    {
+      <li>@course.Name  @course.CourseNumber</li>
+    }
+  </ul>
+}
+
+<form action="/major/@Model["major"].Id/addCourse" method="post">
+  <label for="courseId">Add Course: </label>
+  <select name="courseId">
+    @foreach(var course in Model["courses"])
+    {
+      <option value= "@course.Id" name="courseId">@course.CourseNumber</option>
+    }
+  </select>
+  <button type="submit" name="button">Add Course</button>
+</form>
