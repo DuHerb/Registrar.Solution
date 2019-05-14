@@ -28,3 +28,7 @@
 /Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Registrar.dll
 /Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Registrar.pdb
 /Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Registrar.csproj.CopyComplete
+/Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Student/Index.g.cshtml.cs
+/Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Student/New.g.cshtml.cs
+/Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Course/Index.g.cshtml.cs
+/Users/Guest/Desktop/Registrar.Solution/Registrar/obj/Debug/netcoreapp2.2/Razor/Views/Course/New.g.cshtml.cs

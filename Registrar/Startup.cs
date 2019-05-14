@@ -43,7 +43,6 @@ namespace Registrar
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
